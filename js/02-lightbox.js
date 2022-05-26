@@ -9,16 +9,12 @@ function createImgCards(galleryItems) {
     return galleryItems.map(({ preview, original, description }) => {
         return `
     <a class="gallery__item" href="${original}">
-    <img class="gallery__image" 
-        src="${preview}" 
-        alt="${description}" />
-</a>
+    <img class="gallery__image" src="${preview}" alt="${description}" />
+    </a>
     `
     }).join('');
 };
 
 const lightbox = new SimpleLightbox('.gallery a ', {
     captionDelay: 250,
-    
 });
-console.log(galleryItems);
