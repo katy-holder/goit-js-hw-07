@@ -18,3 +18,5 @@ function createImgCards(galleryItems) {
 const lightbox = new SimpleLightbox('.gallery a ', {
     captionDelay: 250,
 });
+
+
